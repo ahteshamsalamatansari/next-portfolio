@@ -146,7 +146,7 @@
     transform: translate(calc(-50% - 0.5rem));
   }
 }
-
+/* Spotlight code starts here */
 @layer utilities {
   @keyframes spotlight {
     0% {
@@ -163,3 +163,4 @@
     animation: spotlight 2s ease 0.75s 1 forwards;
   }
 }
+/* Spotlight code ends here */
