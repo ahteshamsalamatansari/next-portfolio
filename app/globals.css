@@ -4,6 +4,9 @@
 /* Import Tailwind Animate */
 @plugin "tailwindcss-animate";
 
+/* Import mini-svg-data-uri */
+@plugin "mini-svg-data-uri";
+
 
 @theme {
   /* Color system */
