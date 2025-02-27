@@ -1,3 +1,4 @@
+import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
@@ -29,6 +30,9 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-blue-100"> Hi, I&apos;m Khushi, A Data Scientist based in Texas</p>
+          <a href="#about">
+            <MagicButton title = "Show My Work"/>  
+          </a>        
         </div>
       </div>
     </div>
