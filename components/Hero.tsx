@@ -28,6 +28,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Transforming Concepts into Seamless User Experiences"
           />
+          <p className="text-center "> Hi, I&apos;m Khushi, A Data Scientist based in Texas</p>
         </div>
       </div>
     </div>
