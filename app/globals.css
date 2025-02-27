@@ -96,6 +96,8 @@
     }
   }
 
+  
+
   * {
     @apply border-border !scroll-smooth;
   }
