@@ -27,6 +27,8 @@ export const BentoGridItem = ({
   icon,
   id,
   img,
+  imgClassName,
+  titleClassName,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -34,7 +36,9 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   id?: number | React.ReactNode;
-  img?: string;
+  img?: string | React.ReactNode;
+  imgClassName?: string | React.ReactNode;
+  titleClassName?: string | React.ReactNode;
 }) => {
   return (
     <div
