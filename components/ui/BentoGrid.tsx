@@ -52,7 +52,7 @@ export const BentoGridItem = ({
     >
 
       <div className={`${id===6 }&& 'flex justify-center h-full'`}>
-        <div>
+        <div className="h-full w-full absolute">
           
         </div>
       </div>
