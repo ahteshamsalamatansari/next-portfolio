@@ -1,16 +1,15 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
+import { Color, Scene, Fog, PerspectiveCamera, Vector3, Object3D } from "three";
 import ThreeGlobe from "three-globe";
-import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
+import { useThree, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
-declare module "@react-three/fiber" {
-  interface ThreeElements {
-    threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
+declare module '@react-three/fiber' {
+    interface ThreeElements {
+      threeGlobe: Object3D<ThreeGlobe>; // Assuming ThreeGlobe is the correct type
+    }
   }
-}
-
 extend({ ThreeGlobe });
 
 const RING_PROPAGATION_SPEED = 3;
