@@ -66,7 +66,9 @@ export const BentoGridItem = ({
             <img src={spareimg} alt={spareimg} className={ 'object-cover object-center w-full h-full'} />
           )}
         </div>
-          
+          {id===6 &&(
+            
+          )}
 
       </div>
 
