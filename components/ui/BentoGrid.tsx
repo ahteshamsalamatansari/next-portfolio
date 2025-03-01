@@ -44,6 +44,9 @@ export const BentoGridItem = ({
         "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-none p-4 bg-black border-white/[0.2] border justify-between flex flex-col space-y-4",
         className
       )}
+      style={{
+        background: 'rgb(4,7,29)'
+      }}
     >
       {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
