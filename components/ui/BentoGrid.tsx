@@ -51,20 +51,23 @@ export const BentoGridItem = ({
       }}
     >
 
-      <div className={`${id===6 }&& 'flex justify-center h-full'`}>
+      <div className={`${id === 6 && 'flex justify-center h-full'}`}>
         <div className="h-full w-full absolute">
           {img && (
             <img
-            src={img}
-            alt={img}
-            className={cn(imgClassName, 'object-cover object-center')}
+              src={img}
+              alt={img}
+              className={cn(imgClassName, 'object-cover object-center')}
             />
           )}
         </div>
+        <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
+            
+        </div>
       </div>
-      
+
       <div className="group-hover/bento:translate-x-2 transition duration-200">
-       
+
         <div className="font-sans font-bold  text-neutral-200 mb-2 mt-2">
           {title}
         </div>
