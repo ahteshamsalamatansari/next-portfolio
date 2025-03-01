@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -34,14 +34,14 @@ export const BentoGridItem = ({
   description?: string | React.ReactNode;
   id?: number | React.ReactNode;
   img?: string;
-  imgClassName?: string | React.ReactNode;
-  titleClassName?: string | React.ReactNode;
-  spareimg?: string | React.ReactNode
+  imgClassName?: string;
+  titleClassName?: string;
+  spareimg?: string;  
 }) => {
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-none p-4 bg-black border-white/[0.2] border justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       style={{
@@ -59,10 +59,10 @@ export const BentoGridItem = ({
               alt={img}
               className={cn(imgClassName, 'object-cover object-center')}
             />
-          )}
+          )}  
         </div>
         <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
-            
+
         </div>
       </div>
 
