@@ -89,13 +89,11 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight  text-sm md:text-xs lg:text-base z-10 text-[#c1c2d3]">
             {description}
           </div>
-          <div className="font-sans font-bold  text-neutral-200 mb-2 mt-2">
+          <div className="font-sans font-bold text-lg  text-neutral-200 lg:text-3xl max-w-96 z-10">
             {title}
           </div>
         </div>
       </div>
-
-      <div className="group-hover/bento:translate-x-2 transition duration-200"></div>
     </div>
   );
 };
